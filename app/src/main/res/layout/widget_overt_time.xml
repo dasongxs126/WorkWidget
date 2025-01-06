@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_card_white"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_card_gray"
+            android:columnCount="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:rowCount="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="end|bottom"
+                android:text="本"
+                android:textColor="@color/black"
+                android:textSize="48dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="start|bottom"
+                android:text="周"
+                android:textColor="@color/black"
+                android:textSize="48dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="top|end"
+                android:text="双"
+                android:textColor="@color/green"
+                android:textSize="48dp"
+                android:textStyle="bold"
+                tools:text="双"
+                tools:textColor="@color/green" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:gravity="start|top"
+                android:text="休"
+                android:textColor="@color/black"
+                android:textSize="48dp"
+                android:textStyle="bold" />
+
+        </GridLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="16dp">
+
+        <ImageView
+            android:id="@+id/meme_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/img_rest" />
+
+    </FrameLayout>
+
+</LinearLayout>
